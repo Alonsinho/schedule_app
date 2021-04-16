@@ -6,7 +6,7 @@ development:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
       # database: schedule_app_development
-      uri: mongodb+srv://db_SPuser:aoQlYqK4yraQnIkP@scheduledposting.wplfz.mongodb.net/scheduledPostingDB?retryWrites=true&w=majority
+      uri: mongodb+srv://db_SPuser:aoQlYqK4yraQnIkP@scheduledposting.wplfz.mongodb.net/scheduled_posting_dev?retryWrites=true&w=majority
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       # hosts:
@@ -168,7 +168,7 @@ test:
 production:
   clients:
     default:
-      uri: mongodb+srv://db_SPuser:aoQlYqK4yraQnIkP@scheduledposting.wplfz.mongodb.net/scheduledPostingDB?retryWrites=true&w=majority
+      uri: mongodb+srv://db_SPuser:aoQlYqK4yraQnIkP@scheduledposting.wplfz.mongodb.net/scheduled_posting_prod?retryWrites=true&w=majority
       options:
         server_selection_timeout: 5
   options:
